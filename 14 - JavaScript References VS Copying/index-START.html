@@ -29,7 +29,7 @@
     console.log(players, team);
 
     // You might think we can just do something like this:
-    team[3] = 'Lux';
+    // team[3] = 'Lux';
 
     // however what happens when we update that array?
 
@@ -40,6 +40,7 @@
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
     // So, how do we fix this? We take a copy instead!
+    const team2 = players.slice();
 
     // one way
 
