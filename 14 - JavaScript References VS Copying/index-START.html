@@ -77,6 +77,21 @@
     cap3 = {...person};
 
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+    const Dino = {
+      name: 'Dino',
+      age: 100,
+      social: {
+        twitter: '@Dino',
+        facebook: 'Dino.Developer'
+      }
+    };
+
+    console.clear();
+
+    console.log(Dino);
+
+    const dev = Object.assign({}, Dino);
+    console.log(dev);
 
   </script>
 
